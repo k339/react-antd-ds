@@ -36,7 +36,6 @@ export default [{
     commonjs({
       // non-CommonJS modules will be ignored, but you can also
       // specifically include/exclude files
-      include: 'node_modules/**',  // Default: undefined
       browser: true,
       preferBuiltins: false,
       // if true then uses of `global` won't be dealt with by this plugin

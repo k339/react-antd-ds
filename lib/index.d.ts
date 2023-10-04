@@ -1,13 +1,16 @@
-import React from 'react';
+/// <reference types="react" />
+import * as React from 'react';
+import React__default from 'react';
+import * as styled_components from 'styled-components';
 
 interface ButtonDsProps {
-    children?: React.ReactNode;
+    children?: React__default.ReactNode;
     type?: 'primary' | 'default' | 'text';
     size?: 'middle' | 'large';
     disabled?: boolean;
     onClick?: () => void;
 }
-declare const ButtonDs: ({ children, type, size, disabled, onClick }: ButtonDsProps) => React.JSX.Element;
+declare const ButtonDs: ({ children, type, size, disabled, onClick }: ButtonDsProps) => React__default.JSX.Element;
 
 declare const crmTheme: {
     fonts: {
@@ -75,8 +78,10 @@ declare const crmTheme: {
 };
 interface CustomThemeProviderProps {
     theme?: typeof crmTheme;
-    children: React.ReactNode;
+    children: React__default.ReactNode;
 }
-declare const CustomThemeProvider: ({ theme, children }: CustomThemeProviderProps) => React.JSX.Element;
+declare const CustomThemeProvider: ({ theme, children }: CustomThemeProviderProps) => React__default.JSX.Element;
 
-export { ButtonDs, CustomThemeProvider };
+declare const GlobalStyles: React.NamedExoticComponent<styled_components.ExecutionProps & object>;
+
+export { ButtonDs, CustomThemeProvider, GlobalStyles, crmTheme };
