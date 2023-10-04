@@ -3,7 +3,7 @@ import { Button } from 'antd'
 import styled from 'styled-components'
 
 const ButtonCustom = styled(Button)`
-  font: ${(props) => props.theme.fonts.WebH4};
+  /* font: ${(props) => props.theme.fonts.WebH4};
   color: ${(props) => props.theme.colors.TextIconInverse};
   background-color: ${(props) => props.theme.colors.CtaBgBrandEnable};
   border-radius: ${(props) => props.theme.spacing.borderRadius.default};
@@ -40,7 +40,8 @@ const ButtonCustom = styled(Button)`
       color: ${(props) => props.theme.colors.TextIconIgray1} !important;
       background-color: ${(props) => props.theme.colors.Gray6} !important;
     }
-  }
+  } */
+  border-radius: 8px;
 `
 
 interface ButtonDsProps {
