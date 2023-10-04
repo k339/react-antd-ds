@@ -1,3 +1,7 @@
+
+import React from 'react'
+import { ThemeProvider } from 'styled-components'
+
 export const crmTheme = {
   fonts: {
     WebH1: '28px IBM Plex Sans Thai Semibold',
@@ -62,3 +66,16 @@ export const crmTheme = {
     },
   },
 }
+
+interface CustomThemeProviderProps {
+  theme?: typeof crmTheme
+  children: React.ReactNode
+}
+
+const CustomThemeProvider = ({ theme = crmTheme, children }: CustomThemeProviderProps) => (
+  <ThemeProvider theme={theme}>
+    {children}
+  </ThemeProvider>
+)
+
+export { CustomThemeProvider }
