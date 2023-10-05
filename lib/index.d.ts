@@ -1,7 +1,4 @@
-/// <reference types="react" />
-import * as React from 'react';
-import React__default from 'react';
-import * as styled_components from 'styled-components';
+import React from 'react';
 
 declare const crmTheme: {
     fonts: {
@@ -69,24 +66,22 @@ declare const crmTheme: {
 };
 interface CustomThemeProviderProps {
     theme?: typeof crmTheme;
-    children: React__default.ReactNode;
+    children: React.ReactNode;
 }
-declare const CustomThemeProvider: ({ theme, children }: CustomThemeProviderProps) => React__default.JSX.Element;
-
-declare const GlobalStyles: React.NamedExoticComponent<styled_components.ExecutionProps & object>;
+declare const CustomThemeProvider: ({ theme, children }: CustomThemeProviderProps) => React.JSX.Element;
 
 interface ButtonDsProps {
-    children?: React__default.ReactNode;
+    children?: React.ReactNode;
     type?: 'primary' | 'default' | 'text';
     size?: 'middle' | 'large';
     disabled?: boolean;
     onClick?: () => void;
 }
-declare const ButtonDs: ({ children, type, size, disabled, onClick }: ButtonDsProps) => React__default.JSX.Element;
+declare const ButtonDs: ({ children, type, size, disabled, onClick }: ButtonDsProps) => React.JSX.Element;
 
 interface InputDsProps {
     type: 'text' | 'password';
 }
-declare const InputDs: ({ type }: InputDsProps) => React__default.JSX.Element;
+declare const InputDs: ({ type }: InputDsProps) => React.JSX.Element;
 
-export { ButtonDs, CustomThemeProvider, GlobalStyles, InputDs, crmTheme };
+export { ButtonDs, CustomThemeProvider, InputDs, crmTheme };
