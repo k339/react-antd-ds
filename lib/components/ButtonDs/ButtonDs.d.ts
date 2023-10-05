@@ -1,10 +1,12 @@
-import React from 'react';
-interface ButtonDsProps {
+import React from "react";
+export interface ButtonProps {
+    type?: "primary" | "secondary";
+    size?: "small" | "medium" | "large";
     children?: React.ReactNode;
-    type?: 'primary' | 'default' | 'text';
-    size?: 'middle' | 'large';
-    disabled?: boolean;
-    onClick?: () => void;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 }
-declare const ButtonDs: ({ children, type, size, disabled, onClick }: ButtonDsProps) => React.JSX.Element;
+/**
+ * Primary UI component for user interaction
+ */
+declare const ButtonDs: ({ type, size, children, onClick, }: ButtonProps) => React.JSX.Element;
 export default ButtonDs;
