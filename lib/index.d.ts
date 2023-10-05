@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ButtonProps {
+interface ButtonProps$1 {
     /**
      * Is this the principal call to action on the page?
      */
@@ -25,6 +25,17 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-declare const Button: ({ type, textColor, size, onClick, label, }: ButtonProps) => React.JSX.Element;
+declare const Button: ({ type, textColor, size, onClick, label, }: ButtonProps$1) => React.JSX.Element;
 
-export { Button };
+interface ButtonProps {
+    type?: "primary" | "secondary";
+    size?: "small" | "medium" | "large";
+    children?: React.ReactNode;
+    onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+}
+/**
+ * Primary UI component for user interaction
+ */
+declare const ButtonDs: ({ type, size, children, onClick, }: ButtonProps) => React.JSX.Element;
+
+export { Button, ButtonDs };

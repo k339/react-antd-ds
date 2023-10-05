@@ -38,6 +38,8 @@
     "@storybook/react": "^7.0.11",
     "@storybook/react-webpack5": "^7.0.11",
     "@types/react": "^18.0.27",
+    "@types/styled-components": "^5.1.28",
+    "antd": "^5.9.4",
     "babel-loader": "^8.2.2",
     "postcss": "^8.4.21",
     "react": "^18.2.0",
@@ -47,6 +49,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^7.0.11",
+    "styled-components": "^6.0.8",
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
