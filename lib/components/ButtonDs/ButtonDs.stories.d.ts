@@ -1,6 +1,8 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import ButtonDs from "./ButtonDs";
-declare const meta: Meta<typeof ButtonDs>;
+import type { Meta, StoryObj } from '@storybook/react';
+import Button from './ButtonDs';
+declare const meta: Meta<typeof Button>;
 export default meta;
-type Story = StoryObj<typeof ButtonDs>;
-export declare const Primary: Story;
+type Story = StoryObj<typeof Button>;
+export declare const Basic: Story;
+export declare const Secondary: Story;
+export declare const Tertiary: Story;

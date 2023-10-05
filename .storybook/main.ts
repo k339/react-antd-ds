@@ -1,11 +1,19 @@
-module.exports = {
-  "stories": ["../src/**/*.stories.tsx"],
-  "addons": ["@storybook/addon-links", "@storybook/addon-essentials", "@storybook/addon-styling", "@storybook/addon-actions"],
-  docs: {
-    autodocs: true
-  },
+import type { StorybookConfig } from '@storybook/react-webpack5'
+
+const config: StorybookConfig = {
+  stories: ['../src/**/*.stories.tsx'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
+    '@storybook/addon-styling',
+  ],
   framework: {
-    name: "@storybook/react-webpack5",
-    options: {}
-  }
+    name: '@storybook/react-webpack5',
+    options: {},
+  },
+  docs: {
+    autodocs: 'tag',
+  },
 };
+export default config

@@ -14,5 +14,15 @@
     "@babel/preset-typescript",
     "@babel/preset-react"
   ],
-  "plugins": []
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": false,
+        "displayName": true,
+        "preprocess": false,
+        "minify": false
+      }
+    ]
+  ]
 }

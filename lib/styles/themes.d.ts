@@ -1,5 +1,3 @@
-import React from 'react';
-
 declare const crmTheme: {
     fonts: {
         WebH1: string;
@@ -64,25 +62,4 @@ declare const crmTheme: {
         };
     };
 };
-
-interface CustomThemeProviderProps {
-    theme?: typeof crmTheme;
-    children: React.ReactNode;
-}
-declare const CustomThemeProvider: ({ theme, children }: CustomThemeProviderProps) => React.JSX.Element;
-
-interface ButtonDsProps {
-    children?: React.ReactNode;
-    type?: 'primary' | 'default' | 'text';
-    size?: 'middle' | 'large';
-    disabled?: boolean;
-    onClick?: () => void;
-}
-declare const ButtonDs: ({ children, type, size, disabled, onClick }: ButtonDsProps) => React.JSX.Element;
-
-interface InputDsProps {
-    type: 'text' | 'password';
-}
-declare const InputDs: ({ type }: InputDsProps) => React.JSX.Element;
-
-export { ButtonDs, CustomThemeProvider, InputDs, crmTheme };
+export default crmTheme;
