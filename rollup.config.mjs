@@ -5,8 +5,6 @@ import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
 import url from 'rollup-plugin-url'
-import globals from 'rollup-plugin-node-globals';
-import builtins from 'rollup-plugin-node-builtins';
 
 // This is required to read package.json file when
 // using Native ES modules in Node.js
@@ -33,23 +31,7 @@ export default [{
   plugins: [
     peerDepsExternal(),
     resolve(),
-    commonjs({
-      // non-CommonJS modules will be ignored, but you can also
-      // specifically include/exclude files
-      browser: true,
-      preferBuiltins: false,
-      // if true then uses of `global` won't be dealt with by this plugin
-      ignoreGlobal: false,  // Default: false
-
-      // if false then skip sourceMap generation for CommonJS modules
-      sourceMap: false  // Default: true
-
-      // explicitly specify unresolvable named exports
-      // (see below for more details)
-      // namedExports: { './module.js': ['foo', 'bar' ] }  // Default: undefined
-    }),
-    globals(),
-    builtins(),
+    commonjs(),
     typescript(),
     postcss({
       extensions: ['.css']
