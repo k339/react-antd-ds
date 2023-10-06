@@ -74,4 +74,10 @@ declare const crmTheme: {
     };
 };
 
-export { ButtonDs, crmTheme };
+interface CustomThemeProviderProps {
+    theme?: typeof crmTheme;
+    children: React.ReactNode;
+}
+declare const CustomThemeProvider: ({ theme, children }: CustomThemeProviderProps) => React.JSX.Element;
+
+export { ButtonDs, CustomThemeProvider, crmTheme };

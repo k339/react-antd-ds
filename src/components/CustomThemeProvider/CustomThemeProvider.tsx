@@ -10,7 +10,7 @@ interface CustomThemeProviderProps {
 
 const CustomThemeProvider = ({ theme = crmTheme, children }: CustomThemeProviderProps) => (
   <ThemeProvider theme={theme}>
-    <GlobalStyles />
+    {/* <GlobalStyles /> */}
     {children}
   </ThemeProvider>
 )
