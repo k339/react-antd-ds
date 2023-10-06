@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "antd";
-
-// import styled from 'styled-components'
+import styled from 'styled-components'
 
 // const ButtonCustom = styled(Button)`
 //   font: ${(props) => props.theme.fonts.WebH4};
@@ -44,6 +43,10 @@ import { Button } from "antd";
 //   }
 // `;
 
+const ButtonCustom = styled(Button)`
+  background-color: red;
+`;
+
 interface ButtonDsProps {
   children?: React.ReactNode
   type?: 'primary' | 'default' | 'text'
@@ -53,6 +56,7 @@ interface ButtonDsProps {
 }
 
 const ButtonDs = ({ children, type, size, disabled, onClick }: ButtonDsProps) => {
+  console.log('ButtonCustom', ButtonCustom)
   return (
     <Button type={type} size={size} disabled={disabled} onClick={onClick}>
       {children}
