@@ -1,12 +1,9 @@
 @import '../../styles/global.scss';
 
 .button-ds {
-  span {
-    color: #000;
-  }
   font: $WebH4;
-  color: $TextIconInverse !important;
-  background-color: $CtaBgBrandEnable !important;
+  color: $TextIconInverse;
+  background-color: $CtaBgBrandEnable;
   border-radius: 8px;
   padding: 4px 16px;
   height: 32px;
@@ -28,9 +25,9 @@
     background-color: $BgSurface2;
     border: 1px solid $BorderGray;
     &:hover {
-      color: $BorderGray !important;
+      color: $CtaBorderBrandHover !important;
       background-color: $BgSurface2 !important;
-      border: 1px solid $CtaBgBrandHover !important;
+      border: 1px solid $CtaBorderBrandHover !important;
     }
   }
 }
