@@ -30,7 +30,8 @@ export default [{
   ],
   plugins: [
     scss({
-      outputStyle: 'compressed'
+      outputStyle: 'compressed',
+      fileName: 'ds-bundle.css'
     }),
     peerDepsExternal(),
     resolve(),
