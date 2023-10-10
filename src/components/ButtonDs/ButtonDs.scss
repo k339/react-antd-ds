@@ -1,0 +1,36 @@
+@import '../../styles/global.scss';
+
+.button-ds {
+  span {
+    color: #000;
+  }
+  font: $WebH4;
+  color: $TextIconInverse !important;
+  background-color: $CtaBgBrandEnable !important;
+  border-radius: 8px;
+  padding: 4px 16px;
+  height: 32px;
+  border: none;
+  .ant-btn-lg {
+    padding: 8px 16px;
+    height: 40px;
+  }
+  &:hover {
+    color: $BgSurface2 !important;
+    background-color: $CtaBgBrandHover !important;
+  }
+  &[disabled] {
+    background-color: $CtaBgBrandDisable;
+  }
+
+  &.ant-btn-default {
+    color: $TextIconIgray1;
+    background-color: $BgSurface2;
+    border: 1px solid $BorderGray;
+    &:hover {
+      color: $BorderGray !important;
+      background-color: $BgSurface2 !important;
+      border: 1px solid $CtaBgBrandHover !important;
+    }
+  }
+}

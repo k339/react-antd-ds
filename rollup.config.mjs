@@ -4,6 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import dts from "rollup-plugin-dts";
+import scss from 'rollup-plugin-scss'
 
 // This is required to read package.json file when
 // using Native ES modules in Node.js
@@ -28,6 +29,9 @@ export default [{
     }
   ],
   plugins: [
+    scss({
+      outputStyle: 'compressed'
+    }),
     peerDepsExternal(),
     resolve(),
     commonjs(),

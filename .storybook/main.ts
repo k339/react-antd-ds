@@ -1,6 +1,6 @@
 module.exports = {
   "stories": ["../src/**/*.stories.tsx"],
-  "addons": ["@storybook/addon-links", "@storybook/addon-essentials", "@storybook/addon-styling", "@storybook/addon-actions"],
+  "addons": ["@storybook/addon-links", "@storybook/addon-essentials", "@storybook/addon-styling", "@storybook/addon-actions", "@storybook/preset-scss"],
   docs: {
     autodocs: true
   },
