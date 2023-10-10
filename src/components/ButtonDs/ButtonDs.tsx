@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "antd";
+import "./ButtonDs.scss";
 
 
 interface ButtonDsProps {

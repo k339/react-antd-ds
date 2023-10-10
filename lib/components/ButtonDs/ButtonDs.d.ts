@@ -1,4 +1,5 @@
 import React from "react";
+import "./ButtonDs.scss";
 interface ButtonDsProps {
     children?: React.ReactNode;
     type?: 'primary' | 'default' | 'text';
